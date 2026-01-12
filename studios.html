@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studios - Résidence Amar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-amber-600">Résidence Amar</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-amber-600 transition">Accueil</a>
+                    <a href="logements.html" class="text-amber-600 font-semibold border-b-2 border-amber-600 pb-1">Logements</a>
+                    <a href="tarifs.html" class="text-gray-700 hover:text-amber-600 transition">Tarifs</a>
+                    <a href="reservations.html" class="text-gray-700 hover:text-amber-600 transition">Réservations</a>
+                    <a href="galerie.html" class="text-gray-700 hover:text-amber-600 transition">Galerie</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-amber-600 transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700">Accueil</a>
+                <a href="logements.html" class="block py-2 text-amber-600 font-semibold">Logements</a>
+                <a href="tarifs.html" class="block py-2 text-gray-700">Tarifs</a>
+                <a href="reservations.html" class="block py-2 text-gray-700">Réservations</a>
+                <a href="galerie.html" class="block py-2 text-gray-700">Galerie</a>
+                <a href="contact.html" class="block py-2 text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="bg-gray-50 py-4 mt-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center text-sm text-gray-600">
+                <a href="index.html" class="hover:text-amber-600 transition">Résidence Amar</a>
+                <i class="fas fa-chevron-right mx-2 text-xs"></i>
+                <span class="text-amber-600">Studios</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-3 gap-12">
+                
+                <!-- Left Column - Gallery -->
+                <div class="lg:col-span-2">
+                    <!-- Main Image -->
+                    <div class="mb-6">
+                        <img id="mainImage" src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200" 
+                             alt="Studios" 
+                             class="w-full h-96 object-cover rounded-lg shadow-lg">
+                    </div>
+                    
+                    <!-- Thumbnail Gallery -->
+                    <div class="grid grid-cols-8 gap-3">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=200" 
+                             alt="Studio 1" 
+                             class="w-full h-20 object-cover rounded cursor-pointer hover:opacity-75 transition border-2 border-amber-600"
+                             onclick="changeImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1631049035740-8cb339a4684f?w=200" 
+                             alt="Studio 2" 
+                             class="w-full h-20 object-cover rounded cursor-pointer hover:opacity-75 transition"
+                             onclick="changeImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1631049552057-403cdb8f0658?w=200" 
+                             alt="Studio 3" 
+                             class="w-full h-20 object-cover rounded cursor-pointer hover:opacity-75 transition"
+                             onclick="changeImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=200" 
+                             alt="Studio 4" 
+                             class="w-full h-20 object-cover rounded cursor-pointer hover:opacity-75 transition"
+                             onclick="changeImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?w=200" 
+                             alt="Studio 5" 
+                             class="w-full h-20 object-cover rounded cursor-pointer hover:opacity-75 transition"
+                             onclick="changeImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=200" 
+                             alt="Studio 6" 
+                             class="w-full h-20 object-cover rounded cursor-pointer hover:opacity-75 transition"
+                             onclick="changeImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=200" 
+                             alt="Studio 7" 
+                             class="w-full h-20 object-cover rounded cursor-pointer hover:opacity-75 transition"
+                             onclick="changeImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1595526051245-c1e5047cf2d4?w=200" 
+                             alt="Studio 8" 
+                             class="w-full h-20 object-cover rounded cursor-pointer hover:opacity-75 transition"
+                             onclick="changeImage(this.src)">
+                    </div>
+                </div>
+
+                <!-- Right Column - Details -->
+                <div class="lg:col-span-1">
+                    <div class="bg-white rounded-lg shadow-lg p-8 sticky top-24">
+                        <h1 class="text-4xl font-bold text-gray-900 mb-4">STUDIOS</h1>
+                        
+                        <!-- Rating -->
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-star text-amber-500"></i>
+                            <i class="fas fa-star text-amber-500"></i>
+                            <i class="fas fa-star text-amber-500"></i>
+                            <i class="fas fa-star text-amber-500"></i>
+                            <i class="fas fa-star text-amber-500"></i>
+                            <span class="ml-2 text-gray-600">(4.9)</span>
+                        </div>
+
+                        <!-- Pricing -->
+                        <div class="mb-8">
+                            <div class="text-sm text-gray-500 mb-4">À partir de</div>
+                            <div class="text-4xl font-bold text-amber-600 mb-2">18 000 FCFA</div>
+                            <div class="text-gray-600">/la nuitée</div>
+                            <div class="text-sm text-gray-500 mt-2">*Taxes et frais inclus</div>
+                        </div>
+
+                        <!-- Price Options -->
+                        <div class="border-t border-gray-200 pt-6 mb-8">
+                            <h3 class="font-semibold text-gray-900 mb-4">Options disponibles</h3>
+                            <div class="space-y-4">
+                                <div class="flex justify-between items-center p-4 bg-gray-50 rounded-lg">
+                                    <div>
+                                        <div class="font-semibold text-gray-900">VIP</div>
+                                        <div class="text-xs text-gray-500">*Taxes et frais inclus</div>
+                                    </div>
+                                    <div class="text-xl font-bold text-amber-600">20 000 FCFA</div>
+                                </div>
+                                <div class="flex justify-between items-center p-4 bg-gray-50 rounded-lg">
+                                    <div>
+                                        <div class="font-semibold text-gray-900">STANDARD</div>
+                                        <div class="text-xs text-gray-500">*Taxes et frais inclus</div>
+                                    </div>
+                                    <div class="text-xl font-bold text-amber-600">18 000 FCFA</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Methods -->
+                        <div class="border-t border-gray-200 pt-6 mb-8">
+                            <h3 class="font-semibold text-gray-900 mb-4">Mode de paiement</h3>
+                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400" 
+                                 alt="Mobile Money" 
+                                 class="w-full rounded-lg">
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="space-y-3">
+                            <a href="reservations.html" class="block w-full text-center bg-amber-600 text-white py-4 rounded-lg font-semibold hover:bg-amber-700 transition">
+                                Réserver
+                            </a>
+                            <a href="logements.html" class="block w-full text-center border-2 border-gray-300 text-gray-700 py-4 rounded-lg font-semibold hover:bg-gray-50 transition">
+                                Voir Autres
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-amber-600">Résidence Amar</h3>
+                    <p class="text-gray-400 mb-4">Mboppi-KM5, à côté de l'hôpital Mbingo</p>
+                    <p class="text-gray-400 mb-2">Téléphone: (+237) 659 97 71 98</p>
+                    <p class="text-gray-400 mb-2">WhatsApp: (+237) 698 11 11 08</p>
+                    <p class="text-gray-400">Email: contact@residence-amar.com</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Liens Rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-amber-600 transition">Accueil</a></li>
+                        <li><a href="tarifs.html" class="text-gray-400 hover:text-amber-600 transition">Tarifs</a></li>
+                        <li><a href="logements.html" class="text-gray-400 hover:text-amber-600 transition">Logements</a></li>
+                        <li><a href="reservations.html" class="text-gray-400 hover:text-amber-600 transition">Réservations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">À propos de nous</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-amber-600 transition">À propos de nous</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Nos références</a></li>
+                        <li><a href="galerie.html" class="text-gray-400 hover:text-amber-600 transition">Galeries</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Contactez-nous</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Prendre rendez-vous</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Demandez un devis</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">Copyright @2025 Résidence Amar. Tous droits réservés.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-tiktok text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Image gallery
+        function changeImage(src) {
+            const mainImage = document.getElementById('mainImage');
+            mainImage.src = src.replace('w=200', 'w=1200');
+            
+            // Update border on thumbnails
+            document.querySelectorAll('img[onclick]').forEach(img => {
+                img.classList.remove('border-2', 'border-amber-600');
+            });
+            event.target.classList.add('border-2', 'border-amber-600');
+        }
+    </script>
+</body>
+</html>

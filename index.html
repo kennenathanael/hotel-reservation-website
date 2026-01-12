@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résidence Amar - Accueil</title>
+     <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-amber-600">Résidence Amar</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-amber-600 font-semibold border-b-2 border-amber-600 pb-1">Accueil</a>
+                    <a href="logements.html" class="text-gray-700 hover:text-amber-600 transition">Logements</a>
+                    <a href="tarifs.html" class="text-gray-700 hover:text-amber-600 transition">Tarifs</a>
+                    <a href="reservations.html" class="text-gray-700 hover:text-amber-600 transition">Réservations</a>
+                    <a href="galerie.html" class="text-gray-700 hover:text-amber-600 transition">Galerie</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-amber-600 transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-amber-600 font-semibold">Accueil</a>
+                <a href="logements.html" class="block py-2 text-gray-700 hover:text-amber-600">Logements</a>
+                <a href="tarifs.html" class="block py-2 text-gray-700 hover:text-amber-600">Tarifs</a>
+                <a href="reservations.html" class="block py-2 text-gray-700 hover:text-amber-600">Réservations</a>
+                <a href="galerie.html" class="block py-2 text-gray-700 hover:text-amber-600">Galerie</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-amber-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen mt-20">
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-900 to-gray-700">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600" 
+                 alt="Residence" 
+                 class="w-full h-full object-cover opacity-50">
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 h-full flex items-center">
+            <div class="text-white max-w-2xl">
+                <h2 class="text-5xl md:text-6xl font-bold mb-6">Bienvenue à la Résidence Amar</h2>
+                <p class="text-xl md:text-2xl mb-8">Un havre de confort et de tranquillité situé au cœur de Mboppi-KM5, juste à côté de l'hôpital Mbingo.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="logements.html" class="bg-amber-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-amber-700 transition">Découvrir nos logements</a>
+                    <a href="contact.html" class="bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition">Réserver maintenant</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-amber-600 mb-2">50+</div>
+                    <div class="text-gray-600 uppercase text-sm">Hébergements</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-amber-600 mb-2">1000+</div>
+                    <div class="text-gray-600 uppercase text-sm">Expériences</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-amber-600 mb-2">100%</div>
+                    <div class="text-gray-600 uppercase text-sm">Satisfaction</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-amber-600 mb-2">24/7</div>
+                    <div class="text-gray-600 uppercase text-sm">Concierge</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800" 
+                         alt="Interior" 
+                         class="rounded-lg shadow-2xl">
+                </div>
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Qui sommes-nous ?</h2>
+                    <p class="text-gray-600 text-lg mb-6">Résidence Amar, c'est bien plus qu'un simple lieu d'hébergement. C'est une structure née d'une vision claire : offrir à chaque client un espace de vie confortable, moderne et sécurisé, où il se sent réellement chez lui.</p>
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="border-l-4 border-amber-600 pl-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Suites Premium</h3>
+                            <p class="text-gray-600 text-sm">Hébergements luxueusement aménagés</p>
+                        </div>
+                        <div class="border-l-4 border-amber-600 pl-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Service Primé</h3>
+                            <p class="text-gray-600 text-sm">Hospitalité personnalisée</p>
+                        </div>
+                        <div class="border-l-4 border-amber-600 pl-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Emplacement</h3>
+                            <p class="text-gray-600 text-sm">Situé au cœur de Mboppi-KM5</p>
+                        </div>
+                        <div class="border-l-4 border-amber-600 pl-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Restaurants</h3>
+                            <p class="text-gray-600 text-sm">Expériences culinaires exceptionnelles</p>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="inline-block mt-8 bg-amber-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-700 transition">Découvrez notre histoire</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodations Preview Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Nos Logements</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Nous avons conçu des espaces d'hébergement pensés pour s'adapter à tous les profils et à tous les besoins.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Appartements -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition">
+                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600" 
+                         alt="Appartements" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <div class="text-sm text-amber-600 font-semibold mb-2">NOS LOGEMENTS</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Appartements</h3>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-amber-500"></i>
+                            <i class="fas fa-star text-amber-500"></i>
+                            <i class="fas fa-star text-amber-500"></i>
+                            <i class="fas fa-star text-amber-500"></i>
+                            <i class="fas fa-star text-amber-500"></i>
+                            <span class="ml-2 text-gray-600">(5.0)</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Spacieux et soigneusement meublé, nos appartements sont conçus pour offrir un maximum de confort et de standing.</p>
+                        <div class="text-2xl font-bold text-gray-900 mb-4">25 000 FCFA <span class="text-base font-normal text-gray-600">/ La nuitée</span></div>
+                        <div class="text-sm text-green-600 mb-4">✓ Aucun frais de réservation</div>
+                        <a href="logements.html" class="block w-full text-center bg-amber-600 text-white py-3 rounded-lg font-semibold hover:bg-amber-700 transition">Visitez le logement</a>
+                    </div>
+                </div>
+
+                <!-- Studios -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition">
+                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600" 
+                         alt="Studios" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <div class="text-sm text-amber-600 font-semibold mb-2">NOS LOGEMENTS</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Studios</h3>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-amber-500"></i>
+                            <i class="fas fa-star text-amber-500"></i>
+                            <i class="fas fa-star text-amber-500"></i>
+                            <i class="fas fa-star text-amber-500"></i>
+                            <i class="fas fa-star text-amber-500"></i>
+                            <span class="ml-2 text-gray-600">(5.0)</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Nos studios sont des véritables cocon tout-en-un, alliant indépendances, modernités et conforts premium.</p>
+                        <div class="text-2xl font-bold text-gray-900 mb-4">18 000 FCFA <span class="text-base font-normal text-gray-600">/ La nuitée</span></div>
+                        <div class="text-sm text-green-600 mb-4">✓ Aucun frais de réservation</div>
+                        <a href="logements.html" class="block w-full text-center bg-amber-600 text-white py-3 rounded-lg font-semibold hover:bg-amber-700 transition">Visitez le logement</a>
+                    </div>
+                </div>
+
+                <!-- Chambres -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition">
+                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600" 
+                         alt="Chambres" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <div class="text-sm text-amber-600 font-semibold mb-2">NOS LOGEMENTS</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Chambres</h3>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-amber-500"></i>
+                            <i class="fas fa-star text-amber-500"></i>
+                            <i class="fas fa-star text-amber-500"></i>
+                            <i class="fas fa-star text-amber-500"></i>
+                            <i class="fas fa-star text-amber-500"></i>
+                            <span class="ml-2 text-gray-600">(5.0)</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Offrez-vous un séjour tout en confort avec nos chambres, soigneusement aménagées pour allier élégance et bien-être.</p>
+                        <div class="text-2xl font-bold text-gray-900 mb-4">14 000 FCFA <span class="text-base font-normal text-gray-600">/ La nuitée</span></div>
+                        <div class="text-sm text-green-600 mb-4">✓ Aucun frais de réservation</div>
+                        <a href="logements.html" class="block w-full text-center bg-amber-600 text-white py-3 rounded-lg font-semibold hover:bg-amber-700 transition">Visitez le logement</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="logements.html" class="inline-block bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transition">Voir tous nos logements</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking CTA -->
+    <section class="py-20 bg-amber-600">
+        <div class="max-w-4xl mx-auto px-4 text-center text-white">
+            <h2 class="text-4xl font-bold mb-6">Réservez votre logement en toute simplicité</h2>
+            <p class="text-xl mb-8">Envie de séjourner à la Résidence Amar? Rien de plus simple. Choisissez votre logement, vérifiez les disponibilités, et réservez en ligne en quelques clics.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="logements.html" class="bg-white text-amber-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition">Voir tous nos logements</a>
+                <a href="contact.html" class="bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transition">Demande personnalisée</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Galerie</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Découvrez en images l'univers élégant et accueillant de la Résidence Amar.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=400" 
+                     alt="Gallery 1" 
+                     class="w-full h-64 object-cover rounded-lg hover:opacity-75 transition cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=400" 
+                     alt="Gallery 2" 
+                     class="w-full h-64 object-cover rounded-lg hover:opacity-75 transition cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1596701062351-8c2c14d1fdd0?w=400" 
+                     alt="Gallery 3" 
+                     class="w-full h-64 object-cover rounded-lg hover:opacity-75 transition cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=400" 
+                     alt="Gallery 4" 
+                     class="w-full h-64 object-cover rounded-lg hover:opacity-75 transition cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1595526051245-c1e5047cf2d4?w=400" 
+                     alt="Gallery 5" 
+                     class="w-full h-64 object-cover rounded-lg hover:opacity-75 transition cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=400" 
+                     alt="Gallery 6" 
+                     class="w-full h-64 object-cover rounded-lg hover:opacity-75 transition cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400" 
+                     alt="Gallery 7" 
+                     class="w-full h-64 object-cover rounded-lg hover:opacity-75 transition cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=400" 
+                     alt="Gallery 8" 
+                     class="w-full h-64 object-cover rounded-lg hover:opacity-75 transition cursor-pointer">
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="galerie.html" class="inline-block bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transition">Découvrez notre galerie complète</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-amber-600">
+        <div class="max-w-4xl mx-auto px-4 text-center text-white">
+            <h2 class="text-4xl font-bold mb-6">Nos Tarifs</h2>
+            <p class="text-xl mb-8">À la Résidence Amar, nous croyons qu’un bon hébergement doit allier confort, qualité et accessibilité. C’est pourquoi nous proposons des tarifs transparents et adaptés à chaque type de logement, pour des séjours courts ou prolongés.</p>
+
+            <p class="text-xl mb-4"> Découvrez ci-dessous nos différentes offres et choisissez celle qui correspond à vos besoins.</p>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="tarifs.html" class="bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transition">Consultez nos tarifs</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-amber-600">Résidence Amar</h3>
+                    <p class="text-gray-400 mb-4">Mboppi-KM5, à côté de l'hôpital Mbingo</p>
+                    <p class="text-gray-400 mb-2">Téléphone: (+237) 659 97 71 98</p>
+                    <p class="text-gray-400 mb-2">WhatsApp: (+237) 698 11 11 08</p>
+                    <p class="text-gray-400">Email: contact@residence-amar.com</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Liens Rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-amber-600 transition">Accueil</a></li>
+                        <li><a href="tarifs.html" class="text-gray-400 hover:text-amber-600 transition">Tarifs</a></li>
+                        <li><a href="logements.html" class="text-gray-400 hover:text-amber-600 transition">Logements</a></li>
+                        <li><a href="reservations.html" class="text-gray-400 hover:text-amber-600 transition">Réservations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">À propos de nous</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-amber-600 transition">À propos de nous</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Nos références</a></li>
+                        <li><a href="galerie.html" class="text-gray-400 hover:text-amber-600 transition">Galeries</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Contactez-nous</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Prendre rendez-vous</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Demandez un devis</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">Copyright @2025 Résidence Amar. Tous droits réservés.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-tiktok text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for same-page anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logements - Résidence Amar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-amber-600">Résidence Amar</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-amber-600 transition">Accueil</a>
+                    <a href="logements.html" class="text-amber-600 font-semibold border-b-2 border-amber-600 pb-1">Logements</a>
+                    <a href="tarifs.html" class="text-gray-700 hover:text-amber-600 transition">Tarifs</a>
+                    <a href="reservations.html" class="text-gray-700 hover:text-amber-600 transition">Réservations</a>
+                    <a href="galerie.html" class="text-gray-700 hover:text-amber-600 transition">Galerie</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-amber-600 transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-amber-600">Accueil</a>
+                <a href="logements.html" class="block py-2 text-amber-600 font-semibold">Logements</a>
+                <a href="tarifs.html" class="block py-2 text-gray-700 hover:text-amber-600">Tarifs</a>
+                <a href="reservations.html" class="block py-2 text-gray-700 hover:text-amber-600">Réservations</a>
+                <a href="galerie.html" class="block py-2 text-gray-700 hover:text-amber-600">Galerie</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-amber-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-amber-600 to-amber-700 text-white py-20 mt-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-4">Nos Logements</h1>
+            <p class="text-xl max-w-3xl mx-auto">À la Résidence Amar, nous mettons à votre disposition des logements confortables, propres et sécurisés.</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <section class="bg-gray-50 py-4">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center text-sm text-gray-600">
+                <a href="index.html" class="hover:text-amber-600 transition">Résidence Amar</a>
+                <i class="fas fa-chevron-right mx-2 text-xs"></i>
+                <span class="text-amber-600">Logements</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-xl text-gray-700 leading-relaxed">À la <strong>Résidence Amar</strong>, nous avons conçu des espaces d'hébergement pensés pour s'adapter à tous les profils et à tous les besoins. Que vous soyez seul, en couple, en famille ou en mission professionnelle, vous trouverez chez nous le cadre idéal pour votre séjour.</p>
+        </div>
+    </section>
+
+    <!-- Accommodations Grid -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-12">
+                
+                <!-- Appartements -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800" 
+                             alt="Appartements" 
+                             class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                            Nos Logements
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4">Appartements</h3>
+                        <p class="text-gray-600 text-lg mb-6 leading-relaxed">Spacieux et soigneusement meublé, nos <strong>appartements</strong> sont conçus pour offrir un <strong>maximum de confort et de standing</strong>.</p>
+                        <a href="appartements.html" class="inline-block w-full text-center bg-amber-600 text-white py-4 rounded-lg font-semibold hover:bg-amber-700 transition">
+                            Visiter le logement <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Chambres -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800" 
+                             alt="Chambres" 
+                             class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                            Nos Logements
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4">Chambres</h3>
+                        <p class="text-gray-600 text-lg mb-6 leading-relaxed">Offrez-vous un séjour tout en confort avec nos <strong>chambres</strong>, soigneusement aménagées pour allier élégance et bien-être.</p>
+                        <a href="chambres.html" class="inline-block w-full text-center bg-amber-600 text-white py-4 rounded-lg font-semibold hover:bg-amber-700 transition">
+                            Visiter le logement <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Studios -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800" 
+                             alt="Studios" 
+                             class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                            Nos Logements
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4">Studios</h3>
+                        <p class="text-gray-600 text-lg mb-6 leading-relaxed">Nos <strong>studios</strong> sont des véritables cocon tout-en-un, alliant indépendances, modernités et conforts premium.</p>
+                        <a href="studios.html" class="inline-block w-full text-center bg-amber-600 text-white py-4 rounded-lg font-semibold hover:bg-amber-700 transition">
+                            Visiter le logement <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-amber-600">
+        <div class="max-w-4xl mx-auto px-4 text-center text-white">
+            <h2 class="text-4xl font-bold mb-6">Prêt à réserver votre logement ?</h2>
+            <p class="text-xl mb-8">Découvrez nos tarifs compétitifs et réservez dès maintenant votre espace idéal à la Résidence Amar.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="tarifs.html" class="bg-white text-amber-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition">Voir les tarifs</a>
+                <a href="reservations.html" class="bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transition">Réserver maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-amber-600">Résidence Amar</h3>
+                    <p class="text-gray-400 mb-4">Mboppi-KM5, à côté de l'hôpital Mbingo</p>
+                    <p class="text-gray-400 mb-2">Téléphone: (+237) 659 97 71 98</p>
+                    <p class="text-gray-400 mb-2">WhatsApp: (+237) 698 11 11 08</p>
+                    <p class="text-gray-400">Email: contact@residence-amar.com</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Liens Rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-amber-600 transition">Accueil</a></li>
+                        <li><a href="tarifs.html" class="text-gray-400 hover:text-amber-600 transition">Tarifs</a></li>
+                        <li><a href="logements.html" class="text-gray-400 hover:text-amber-600 transition">Logements</a></li>
+                        <li><a href="reservations.html" class="text-gray-400 hover:text-amber-600 transition">Réservations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">À propos de nous</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-amber-600 transition">À propos de nous</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Nos références</a></li>
+                        <li><a href="galerie.html" class="text-gray-400 hover:text-amber-600 transition">Galeries</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Contactez-nous</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Prendre rendez-vous</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Demandez un devis</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">Copyright @2025 Résidence Amar. Tous droits réservés.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-tiktok text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
