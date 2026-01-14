@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Résidence Amar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-amber-600">Résidence Amar</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-amber-600 transition">Accueil</a>
+                    <a href="logements.html" class="text-gray-700 hover:text-amber-600 transition">Logements</a>
+                    <a href="tarifs.html" class="text-gray-700 hover:text-amber-600 transition">Tarifs</a>
+                    <a href="reservations.html" class="text-gray-700 hover:text-amber-600 transition">Réservations</a>
+                    <a href="galerie.html" class="text-amber-600 font-semibold border-b-2 border-amber-600 pb-1">Galerie</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-amber-600 transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-amber-600">Accueil</a>
+                <a href="logements.html" class="block py-2 text-gray-700 hover:text-amber-600">Logements</a>
+                <a href="tarifs.html" class="block py-2 text-gray-700 hover:text-amber-600">Tarifs</a>
+                <a href="reservations.html" class="block py-2 text-gray-700 hover:text-amber-600">Réservations</a>
+                <a href="galerie.html" class="block py-2 text-amber-600 font-semibold">Galerie</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-amber-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-amber-600 to-amber-700 text-white py-20 mt-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-4">Galerie</h1>
+            <p class="text-xl max-w-3xl mx-auto">Découvrez en images le confort et l'élégance de nos logements chez Résidence Amar.</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <section class="bg-gray-50 py-4">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center text-sm text-gray-600">
+                <a href="index.html" class="hover:text-amber-600 transition">Résidence Amar</a>
+                <i class="fas fa-chevron-right mx-2 text-xs"></i>
+                <span class="text-amber-600">Galerie</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Introduction -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Découvrez notre propriété</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Découvrez la beauté et le confort de notre chef d'œuvre à travers des visuels époustouflants</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button onclick="filterGallery('tous')" class="filter-btn active px-6 py-3 rounded-lg font-semibold transition">
+                    Tous
+                </button>
+                <button onclick="filterGallery('appartements')" class="filter-btn px-6 py-3 rounded-lg font-semibold transition">
+                    Appartements VIP
+                </button>
+                <button onclick="filterGallery('chambres-standard')" class="filter-btn px-6 py-3 rounded-lg font-semibold transition">
+                    Chambres Standard
+                </button>
+                <button onclick="filterGallery('chambres-vip')" class="filter-btn px-6 py-3 rounded-lg font-semibold transition">
+                    Chambres VIP
+                </button>
+                <button onclick="filterGallery('studios')" class="filter-btn px-6 py-3 rounded-lg font-semibold transition">
+                    Studios VIP
+                </button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                
+                <!-- Appartements -->
+                <div class="gallery-item appartements" data-category="appartements">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer" onclick="openModal(this)">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600" 
+                             alt="Appartement VIP" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Appartement VIP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item appartements" data-category="appartements">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer" onclick="openModal(this)">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600" 
+                             alt="Appartement VIP" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Appartement VIP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item appartements" data-category="appartements">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer" onclick="openModal(this)">
+                        <img src="https://images.unsplash.com/photo-1595526051245-c1e5047cf2d4?w=600" 
+                             alt="Appartement VIP" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Appartement VIP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item appartements" data-category="appartements">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer" onclick="openModal(this)">
+                        <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=600" 
+                             alt="Appartement VIP" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Appartement VIP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chambres VIP -->
+                <div class="gallery-item chambres-vip" data-category="chambres-vip">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer" onclick="openModal(this)">
+                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600" 
+                             alt="Chambre VIP" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Chambre VIP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item chambres-vip" data-category="chambres-vip">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer" onclick="openModal(this)">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600" 
+                             alt="Chambre VIP" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Chambre VIP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item chambres-vip" data-category="chambres-vip">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer" onclick="openModal(this)">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600" 
+                             alt="Chambre VIP" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Chambre VIP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item chambres-vip" data-category="chambres-vip">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer" onclick="openModal(this)">
+                        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=600" 
+                             alt="Chambre VIP" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Chambre VIP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chambres Standard -->
+                <div class="gallery-item chambres-standard" data-category="chambres-standard">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer" onclick="openModal(this)">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600" 
+                             alt="Chambre Standard" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Chambre Standard</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item chambres-standard" data-category="chambres-standard">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer" onclick="openModal(this)">
+                        <img src="https://images.unsplash.com/photo-1631049035463-7c2f68241a37?w=600" 
+                             alt="Chambre Standard" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Chambre Standard</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item chambres-standard" data-category="chambres-standard">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer" onclick="openModal(this)">
+                        <img src="https://images.unsplash.com/photo-1615460549969-36fa19521a4f?w=600" 
+                             alt="Chambre Standard" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Chambre Standard</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item chambres-standard" data-category="chambres-standard">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer" onclick="openModal(this)">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600" 
+                             alt="Chambre Standard" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Chambre Standard</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Studios -->
+                <div class="gallery-item studios" data-category="studios">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer" onclick="openModal(this)">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600" 
+                             alt="Studio VIP" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Studio VIP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item studios" data-category="studios">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer" onclick="openModal(this)">
+                        <img src="https://images.unsplash.com/photo-1631049035740-8cb339a4684f?w=600" 
+                             alt="Studio VIP" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Studio VIP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item studios" data-category="studios">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer" onclick="openModal(this)">
+                        <img src="https://images.unsplash.com/photo-1631049552057-403cdb8f0658?w=600" 
+                             alt="Studio VIP" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Studio VIP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item studios" data-category="studios">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer" onclick="openModal(this)">
+                        <img src="https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=600" 
+                             alt="Studio VIP" 
+                             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Studio VIP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden items-center justify-center p-4">
+        <div class="relative max-w-5xl w-full">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-white text-4xl hover:text-amber-600 transition z-10">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="modalImage" src="" alt="" class="w-full h-auto rounded-lg">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-amber-600">Résidence Amar</h3>
+                    <p class="text-gray-400 mb-4">Mboppi-KM5, à côté de l'hôpital Mbingo</p>
+                    <p class="text-gray-400 mb-2">Téléphone: (+237) 659 97 71 98</p>
+                    <p class="text-gray-400 mb-2">WhatsApp: (+237) 698 11 11 08</p>
+                    <p class="text-gray-400">Email: contact@residence-amar.com</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Liens Rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-amber-600 transition">Accueil</a></li>
+                        <li><a href="tarifs.html" class="text-gray-400 hover:text-amber-600 transition">Tarifs</a></li>
+                        <li><a href="logements.html" class="text-gray-400 hover:text-amber-600 transition">Logements</a></li>
+                        <li><a href="reservations.html" class="text-gray-400 hover:text-amber-600 transition">Réservations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">À propos de nous</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-amber-600 transition">À propos de nous</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Nos références</a></li>
+                        <li><a href="galerie.html" class="text-gray-400 hover:text-amber-600 transition">Galeries</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Contactez-nous</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Prendre rendez-vous</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Demandez un devis</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">Copyright @2025 Résidence Amar. Tous droits réservés.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-tiktok text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Gallery filter
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update button styles
+            buttons.forEach(btn => {
+                btn.classList.remove('active', 'bg-amber-600', 'text-white');
+                btn.classList.add('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
+            });
+            event.target.classList.remove('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
+            event.target.classList.add('active', 'bg-amber-600', 'text-white');
+            
+            // Filter items
+            items.forEach(item => {
+                if (category === 'tous' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Initialize filter buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            if (!btn.classList.contains('active')) {
+                btn.classList.add('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
+            } else {
+                btn.classList.add('bg-amber-600', 'text-white');
+            }
+        });
+
+        // Modal functions
+        function openModal(element) {
+            const img = element.querySelector('img');
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            
+            modalImg.src = img.src.replace('w=600', 'w=1200');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
