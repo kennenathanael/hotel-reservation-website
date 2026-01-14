@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Résidence Amar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-amber-600">Résidence Amar</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-amber-600 transition">Accueil</a>
+                    <a href="logements.html" class="text-gray-700 hover:text-amber-600 transition">Logements</a>
+                    <a href="tarifs.html" class="text-gray-700 hover:text-amber-600 transition">Tarifs</a>
+                    <a href="reservations.html" class="text-gray-700 hover:text-amber-600 transition">Réservations</a>
+                    <a href="galerie.html" class="text-gray-700 hover:text-amber-600 transition">Galerie</a>
+                    <a href="contact.html" class="text-amber-600 font-semibold border-b-2 border-amber-600 pb-1">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-amber-600">Accueil</a>
+                <a href="logements.html" class="block py-2 text-gray-700 hover:text-amber-600">Logements</a>
+                <a href="tarifs.html" class="block py-2 text-gray-700 hover:text-amber-600">Tarifs</a>
+                <a href="reservations.html" class="block py-2 text-gray-700 hover:text-amber-600">Réservations</a>
+                <a href="galerie.html" class="block py-2 text-gray-700 hover:text-amber-600">Galerie</a>
+                <a href="contact.html" class="block py-2 text-amber-600 font-semibold">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-amber-600 to-amber-700 text-white py-20 mt-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-4">Nos Contacts</h1>
+            <p class="text-xl max-w-3xl mx-auto">Contactez-nous pour toute question, demande de réservation ou précision sur nos logements.</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <section class="bg-gray-50 py-4">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center text-sm text-gray-600">
+                <a href="index.html" class="hover:text-amber-600 transition">Résidence Amar</a>
+                <i class="fas fa-chevron-right mx-2 text-xs"></i>
+                <span class="text-amber-600">Contact</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Une question? Une demande de réservation particulière?</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                L'équipe de la <strong>Résidence Amar</strong> est à votre écoute et prête à vous assister rapidement. Que ce soit pour un séjour court, une location longue durée, ou simplement pour obtenir plus d'informations, n'hésitez pas à nous joindre via les coordonnées ci-dessous ou en remplissant le formulaire de contact.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Information Cards -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Location Card -->
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-2xl transition">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-map-marker-alt text-amber-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Notre Localisation</h3>
+                    <p class="text-gray-600 leading-relaxed">Mboppi-KM5, à côté de l'hôpital Mbingo</p>
+                </div>
+
+                <!-- Email Card -->
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-2xl transition">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-envelope text-amber-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Envoyez nous un mail</h3>
+                    <a href="mailto:contact@residence-amar.com" class="text-amber-600 hover:text-amber-700 transition">
+                        contact@residence-amar.com
+                    </a>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-2xl transition">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-phone text-amber-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Contactez-nous</h3>
+                    <p class="text-gray-600">
+                        <a href="tel:+237659977198" class="hover:text-amber-600 transition">(+237) 659 97 71 98</a><br>
+                        <a href="tel:+237698111108" class="hover:text-amber-600 transition">(+237) 698 11 11 08</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Envoyez-nous un message</h2>
+                <p class="text-xl text-gray-600">Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais</p>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg shadow-xl p-8 md:p-12">
+                <form id="contactForm">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <!-- First Name -->
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Nom</label>
+                            <input type="text" 
+                                   required
+                                   placeholder="Votre nom"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent">
+                        </div>
+
+                        <!-- Last Name -->
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Prénom</label>
+                            <input type="text" 
+                                   required
+                                   placeholder="Votre prénom"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                        <input type="email" 
+                               required
+                               placeholder="votre@email.com"
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent">
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-2">Numéro de téléphone</label>
+                        <input type="tel" 
+                               required
+                               placeholder="+237 6XX XX XX XX"
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent">
+                    </div>
+
+                    <!-- Message -->
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-2">Message</label>
+                        <textarea rows="6" 
+                                  required
+                                  placeholder="Écrivez votre message ici..."
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" 
+                            class="w-full bg-amber-600 text-white py-4 rounded-lg font-semibold hover:bg-amber-700 transition text-lg">
+                        Envoyez le message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Trouvez-nous</h2>
+                <p class="text-xl text-gray-600">Mboppi-KM5, à côté de l'hôpital Mbingo</p>
+            </div>
+            
+            <!-- Placeholder for Map -->
+            <div class="bg-gray-300 rounded-lg shadow-lg overflow-hidden h-96 flex items-center justify-center">
+                <div class="text-center">
+                    <i class="fas fa-map-marked-alt text-6xl text-gray-500 mb-4"></i>
+                    <p class="text-gray-600 text-lg">Intégration Google Maps</p>
+                    <p class="text-gray-500 text-sm mt-2">Coordonnées: Mboppi-KM5, Douala</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media & Quick Links -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Social Media -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Suivez-nous</h3>
+                    <p class="text-gray-600 mb-6">Restez connecté avec nous sur les réseaux sociaux pour les dernières nouvelles et offres spéciales</p>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="w-12 h-12 bg-amber-600 text-white rounded-full flex items-center justify-center hover:bg-amber-700 transition">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-amber-600 text-white rounded-full flex items-center justify-center hover:bg-amber-700 transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-amber-600 text-white rounded-full flex items-center justify-center hover:bg-amber-700 transition">
+                            <i class="fab fa-tiktok text-xl"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center hover:bg-green-700 transition">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Contact -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Besoin d'aide immédiate?</h3>
+                    <p class="text-gray-600 mb-6">Notre équipe est disponible pour répondre à vos questions</p>
+                    <div class="space-y-3">
+                        <a href="tel:+237659977198" class="block bg-amber-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-700 transition text-center">
+                            <i class="fas fa-phone mr-2"></i> Appelez maintenant
+                        </a>
+                        <a href="https://wa.me/237698111108" target="_blank" class="block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition text-center">
+                            <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-amber-600">Résidence Amar</h3>
+                    <p class="text-gray-400 mb-4">Mboppi-KM5, à côté de l'hôpital Mbingo</p>
+                    <p class="text-gray-400 mb-2">Téléphone: (+237) 659 97 71 98</p>
+                    <p class="text-gray-400 mb-2">WhatsApp: (+237) 698 11 11 08</p>
+                    <p class="text-gray-400">Email: contact@residence-amar.com</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Liens Rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-amber-600 transition">Accueil</a></li>
+                        <li><a href="tarifs.html" class="text-gray-400 hover:text-amber-600 transition">Tarifs</a></li>
+                        <li><a href="logements.html" class="text-gray-400 hover:text-amber-600 transition">Logements</a></li>
+                        <li><a href="reservations.html" class="text-gray-400 hover:text-amber-600 transition">Réservations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">À propos de nous</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-amber-600 transition">À propos de nous</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Nos références</a></li>
+                        <li><a href="galerie.html" class="text-gray-400 hover:text-amber-600 transition">Galeries</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Contactez-nous</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Prendre rendez-vous</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-amber-600 transition">Demandez un devis</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">Copyright @2025 Résidence Amar. Tous droits réservés.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-amber-600 transition"><i class="fab fa-tiktok text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Merci pour votre message! Nous vous répondrons dans les plus brefs délais.');
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
